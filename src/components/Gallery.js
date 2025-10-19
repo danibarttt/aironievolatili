@@ -43,18 +43,18 @@ export default function Gallery() {
       <div
         style={{
           columnCount: 3,
-          columnGap: "16px",
+          columnGap: "4px",
         }}
       >
         {photos.map((photo, i) => (
             <img
               key={photo.id}
               alt={photo.title}
-              src={photo.src}
+              src={photo.thumbnail}
               style={{
                 width: "100%",
                 display: "block",
-                marginBottom: "16px",
+                marginBottom: "4px",
                 cursor: "pointer",
               }}
               onClick={() => openLightbox(photo.id)}

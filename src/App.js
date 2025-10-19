@@ -1,7 +1,7 @@
 import Gallery from "./components/Gallery";
-import {createBrowserRouter, RouterProvider} from 'react-router';
+import {createHashRouter, RouterProvider} from 'react-router';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Gallery/>,
