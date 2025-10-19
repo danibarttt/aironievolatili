@@ -14,7 +14,7 @@
     "dev": "parcel src/index.html --open",
     "prebuild": "node src/generate-thumbnails.js",
     "build": "parcel build src/index.html --public-url ./",
-    "predeploy": "npm run build",
+    "predeploy": "npm run clean build",
     "deploy": "gh-pages -d dist --dotfiles --message \"Deploy $(date)\""
   },
   "devDependencies": {
