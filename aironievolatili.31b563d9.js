@@ -17409,7 +17409,7 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _gallery = require("./components/Gallery");
 var _galleryDefault = parcelHelpers.interopDefault(_gallery);
 var _reactRouter = require("react-router");
-const router = (0, _reactRouter.createBrowserRouter)([
+const router = (0, _reactRouter.createHashRouter)([
     {
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _galleryDefault.default), {}, void 0, false, {
@@ -17517,15 +17517,15 @@ function Gallery() {
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 style: {
                     columnCount: 3,
-                    columnGap: "16px"
+                    columnGap: "4px"
                 },
                 children: (0, _photosDefault.default).map((photo, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         alt: photo.title,
-                        src: photo.src,
+                        src: photo.thumbnail,
                         style: {
                             width: "100%",
                             display: "block",
-                            marginBottom: "16px",
+                            marginBottom: "4px",
                             cursor: "pointer"
                         },
                         onClick: ()=>openLightbox(photo.id)
@@ -22065,149 +22065,212 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _img2971Jpg = require("url:./IMG_2971.jpg");
 var _img2971JpgDefault = parcelHelpers.interopDefault(_img2971Jpg);
+var _img2971Jpg1 = require("url:./thumbnails/IMG_2971.jpg");
+var _img2971JpgDefault1 = parcelHelpers.interopDefault(_img2971Jpg1);
 var _img2990Jpg = require("url:./IMG_2990.jpg");
 var _img2990JpgDefault = parcelHelpers.interopDefault(_img2990Jpg);
+var _img2990Jpg1 = require("url:./thumbnails/IMG_2990.jpg");
+var _img2990JpgDefault1 = parcelHelpers.interopDefault(_img2990Jpg1);
 var _img3292Jpg = require("url:./IMG_3292.jpg");
 var _img3292JpgDefault = parcelHelpers.interopDefault(_img3292Jpg);
+var _img3292Jpg1 = require("url:./thumbnails/IMG_3292.jpg");
+var _img3292JpgDefault1 = parcelHelpers.interopDefault(_img3292Jpg1);
 var _img3511Jpg = require("url:./IMG_3511.jpg");
 var _img3511JpgDefault = parcelHelpers.interopDefault(_img3511Jpg);
+var _img3511Jpg1 = require("url:./thumbnails/IMG_3511.jpg");
+var _img3511JpgDefault1 = parcelHelpers.interopDefault(_img3511Jpg1);
 var _img3807Jpg = require("url:./IMG_3807.jpg");
 var _img3807JpgDefault = parcelHelpers.interopDefault(_img3807Jpg);
+var _img3807Jpg1 = require("url:./thumbnails/IMG_3807.jpg");
+var _img3807JpgDefault1 = parcelHelpers.interopDefault(_img3807Jpg1);
 var _img3817Jpg = require("url:./IMG_3817.jpg");
 var _img3817JpgDefault = parcelHelpers.interopDefault(_img3817Jpg);
+var _img3817Jpg1 = require("url:./thumbnails/IMG_3817.jpg");
+var _img3817JpgDefault1 = parcelHelpers.interopDefault(_img3817Jpg1);
 var _img3943Jpg = require("url:./IMG_3943.jpg");
 var _img3943JpgDefault = parcelHelpers.interopDefault(_img3943Jpg);
+var _img3943Jpg1 = require("url:./thumbnails/IMG_3943.jpg");
+var _img3943JpgDefault1 = parcelHelpers.interopDefault(_img3943Jpg1);
 var _img4044Jpg = require("url:./IMG_4044.jpg");
 var _img4044JpgDefault = parcelHelpers.interopDefault(_img4044Jpg);
+var _img4044Jpg1 = require("url:./thumbnails/IMG_4044.jpg");
+var _img4044JpgDefault1 = parcelHelpers.interopDefault(_img4044Jpg1);
 var _img4087Jpg = require("url:./IMG_4087.jpg");
 var _img4087JpgDefault = parcelHelpers.interopDefault(_img4087Jpg);
+var _img4087Jpg1 = require("url:./thumbnails/IMG_4087.jpg");
+var _img4087JpgDefault1 = parcelHelpers.interopDefault(_img4087Jpg1);
 var _img4100Jpg = require("url:./IMG_4100.jpg");
 var _img4100JpgDefault = parcelHelpers.interopDefault(_img4100Jpg);
+var _img4100Jpg1 = require("url:./thumbnails/IMG_4100.jpg");
+var _img4100JpgDefault1 = parcelHelpers.interopDefault(_img4100Jpg1);
 var _img4188Jpg = require("url:./IMG_4188.jpg");
 var _img4188JpgDefault = parcelHelpers.interopDefault(_img4188Jpg);
+var _img4188Jpg1 = require("url:./thumbnails/IMG_4188.jpg");
+var _img4188JpgDefault1 = parcelHelpers.interopDefault(_img4188Jpg1);
 var _img4198Jpg = require("url:./IMG_4198.jpg");
 var _img4198JpgDefault = parcelHelpers.interopDefault(_img4198Jpg);
+var _img4198Jpg1 = require("url:./thumbnails/IMG_4198.jpg");
+var _img4198JpgDefault1 = parcelHelpers.interopDefault(_img4198Jpg1);
 var _img4344Jpg = require("url:./IMG_4344.jpg");
 var _img4344JpgDefault = parcelHelpers.interopDefault(_img4344Jpg);
+var _img4344Jpg1 = require("url:./thumbnails/IMG_4344.jpg");
+var _img4344JpgDefault1 = parcelHelpers.interopDefault(_img4344Jpg1);
 var _img4398Jpg = require("url:./IMG_4398.jpg");
 var _img4398JpgDefault = parcelHelpers.interopDefault(_img4398Jpg);
+var _img4398Jpg1 = require("url:./thumbnails/IMG_4398.jpg");
+var _img4398JpgDefault1 = parcelHelpers.interopDefault(_img4398Jpg1);
 var _img4480Jpg = require("url:./IMG_4480.jpg");
 var _img4480JpgDefault = parcelHelpers.interopDefault(_img4480Jpg);
+var _img4480Jpg1 = require("url:./thumbnails/IMG_4480.jpg");
+var _img4480JpgDefault1 = parcelHelpers.interopDefault(_img4480Jpg1);
 var _img4572Jpg = require("url:./IMG_4572.jpg");
 var _img4572JpgDefault = parcelHelpers.interopDefault(_img4572Jpg);
+var _img4572Jpg1 = require("url:./thumbnails/IMG_4572.jpg");
+var _img4572JpgDefault1 = parcelHelpers.interopDefault(_img4572Jpg1);
 var _img4937Jpg = require("url:./IMG_4937.jpg");
 var _img4937JpgDefault = parcelHelpers.interopDefault(_img4937Jpg);
+var _img4937Jpg1 = require("url:./thumbnails/IMG_4937.jpg");
+var _img4937JpgDefault1 = parcelHelpers.interopDefault(_img4937Jpg1);
 var _img5284Jpg = require("url:./IMG_5284.jpg");
 var _img5284JpgDefault = parcelHelpers.interopDefault(_img5284Jpg);
+var _img5284Jpg1 = require("url:./thumbnails/IMG_5284.jpg");
+var _img5284JpgDefault1 = parcelHelpers.interopDefault(_img5284Jpg1);
 var _img5319Jpg = require("url:./IMG_5319.jpg");
 var _img5319JpgDefault = parcelHelpers.interopDefault(_img5319Jpg);
+var _img5319Jpg1 = require("url:./thumbnails/IMG_5319.jpg");
+var _img5319JpgDefault1 = parcelHelpers.interopDefault(_img5319Jpg1);
 var _img5321Jpg = require("url:./IMG_5321.jpg");
 var _img5321JpgDefault = parcelHelpers.interopDefault(_img5321Jpg);
+var _img5321Jpg1 = require("url:./thumbnails/IMG_5321.jpg");
+var _img5321JpgDefault1 = parcelHelpers.interopDefault(_img5321Jpg1);
 var _img5470Jpg = require("url:./IMG_5470.jpg");
 var _img5470JpgDefault = parcelHelpers.interopDefault(_img5470Jpg);
+var _img5470Jpg1 = require("url:./thumbnails/IMG_5470.jpg");
+var _img5470JpgDefault1 = parcelHelpers.interopDefault(_img5470Jpg1);
 let photos = [
     {
         src: (0, _img2971JpgDefault.default),
+        thumbnail: (0, _img2971JpgDefault1.default),
         title: "Aironi Cenerini",
         _id: "2fffd7e0"
     },
     {
         src: (0, _img2990JpgDefault.default),
+        thumbnail: (0, _img2990JpgDefault1.default),
         title: "Aironi Cenerini",
         _id: "dbe30e8a"
     },
     {
         src: (0, _img3292JpgDefault.default),
-        title: "Airone Guardabuoi e Garzetta",
+        thumbnail: (0, _img3292JpgDefault1.default),
+        title: "Guardabuoi e Garzetta",
         _id: "aa86c9f8"
     },
     {
         src: (0, _img3511JpgDefault.default),
+        thumbnail: (0, _img3511JpgDefault1.default),
         title: "Garzetta",
         _id: "a6cdac30"
     },
     {
         src: (0, _img3807JpgDefault.default),
+        thumbnail: (0, _img3807JpgDefault1.default),
         title: "Airone Rosso",
         _id: "2b07cdda"
     },
     {
         src: (0, _img3817JpgDefault.default),
+        thumbnail: (0, _img3817JpgDefault1.default),
         title: "Airone Rosso",
         _id: "f824065c"
     },
     {
         src: (0, _img3943JpgDefault.default),
+        thumbnail: (0, _img3943JpgDefault1.default),
         title: "Nitticora",
         _id: "3af80f40"
     },
     {
         src: (0, _img4044JpgDefault.default),
+        thumbnail: (0, _img4044JpgDefault1.default),
         title: "Gruccione",
         _id: "a32ac848"
     },
     {
         src: (0, _img4087JpgDefault.default),
+        thumbnail: (0, _img4087JpgDefault1.default),
         title: "Airone Cenerino",
         _id: "52219f95"
     },
     {
         src: (0, _img4100JpgDefault.default),
+        thumbnail: (0, _img4100JpgDefault1.default),
         title: "Giovane Airone Rosso",
         _id: "23f3c87d"
     },
     {
         src: (0, _img4188JpgDefault.default),
+        thumbnail: (0, _img4188JpgDefault1.default),
         title: "Airone Cenerino",
         _id: "65eb97e8"
     },
     {
         src: (0, _img4198JpgDefault.default),
+        thumbnail: (0, _img4198JpgDefault1.default),
         title: "Airone Cenerino",
         _id: "d9043bd5"
     },
     {
         src: (0, _img4344JpgDefault.default),
+        thumbnail: (0, _img4344JpgDefault1.default),
         title: "Airone Cenerino",
         _id: "1d324029"
     },
     {
         src: (0, _img4398JpgDefault.default),
+        thumbnail: (0, _img4398JpgDefault1.default),
         title: "Airone Cenerino",
         _id: "a325da53"
     },
     {
         src: (0, _img4480JpgDefault.default),
+        thumbnail: (0, _img4480JpgDefault1.default),
         title: "Gallinella d'acqua",
         _id: "31f846ec"
     },
     {
         src: (0, _img4572JpgDefault.default),
+        thumbnail: (0, _img4572JpgDefault1.default),
         title: "Cicogna",
         _id: "539a922c"
     },
     {
         src: (0, _img4937JpgDefault.default),
+        thumbnail: (0, _img4937JpgDefault1.default),
         title: "Fagiano",
         _id: "8f515a6f"
     },
     {
         src: (0, _img5284JpgDefault.default),
+        thumbnail: (0, _img5284JpgDefault1.default),
         title: "Airone Bianco Maggiore",
         _id: "a42a6c22"
     },
     {
         src: (0, _img5319JpgDefault.default),
-        title: "Airone Bianco Maggiore, Giovane Cenerino e Ibis",
+        thumbnail: (0, _img5319JpgDefault1.default),
+        title: "Bianco Maggiore, Cenerino e Ibis",
         _id: "1efc82b8"
     },
     {
         src: (0, _img5321JpgDefault.default),
+        thumbnail: (0, _img5321JpgDefault1.default),
         title: "Aironi Bianchi Maggiori",
         _id: "024f0904"
     },
     {
         src: (0, _img5470JpgDefault.default),
+        thumbnail: (0, _img5470JpgDefault1.default),
         title: "Cicogne",
         _id: "fd63d7bd"
     }
@@ -22220,7 +22283,7 @@ var _c, _c1;
 $RefreshReg$(_c, "%default%$photos.map");
 $RefreshReg$(_c1, "%default%");
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","url:./IMG_2971.jpg":"1MEiM","url:./IMG_2990.jpg":"6DJbk","url:./IMG_3292.jpg":"gUmfH","url:./IMG_3511.jpg":"PbZXc","url:./IMG_3807.jpg":"9cgCE","url:./IMG_3817.jpg":"2i3Rk","url:./IMG_3943.jpg":"9kk5U","url:./IMG_4044.jpg":"gzvUN","url:./IMG_4087.jpg":"eLXKC","url:./IMG_4100.jpg":"gczhN","url:./IMG_4188.jpg":"lF9Al","url:./IMG_4198.jpg":"7qlLf","url:./IMG_4344.jpg":"eX8M4","url:./IMG_4398.jpg":"jnjLx","url:./IMG_4480.jpg":"lewBu","url:./IMG_4572.jpg":"6y7Rr","url:./IMG_4937.jpg":"iegnQ","url:./IMG_5284.jpg":"bsgPi","url:./IMG_5319.jpg":"iTHzO","url:./IMG_5321.jpg":"cLeXp","url:./IMG_5470.jpg":"6feyq"}],"1MEiM":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","url:./IMG_2971.jpg":"1MEiM","url:./IMG_2990.jpg":"6DJbk","url:./IMG_3292.jpg":"gUmfH","url:./IMG_3511.jpg":"PbZXc","url:./IMG_3807.jpg":"9cgCE","url:./IMG_3817.jpg":"2i3Rk","url:./IMG_3943.jpg":"9kk5U","url:./IMG_4044.jpg":"gzvUN","url:./IMG_4087.jpg":"eLXKC","url:./IMG_4100.jpg":"gczhN","url:./IMG_4188.jpg":"lF9Al","url:./IMG_4198.jpg":"7qlLf","url:./IMG_4344.jpg":"eX8M4","url:./IMG_4398.jpg":"jnjLx","url:./IMG_4480.jpg":"lewBu","url:./IMG_4572.jpg":"6y7Rr","url:./IMG_4937.jpg":"iegnQ","url:./IMG_5284.jpg":"bsgPi","url:./IMG_5319.jpg":"iTHzO","url:./IMG_5321.jpg":"cLeXp","url:./IMG_5470.jpg":"6feyq","url:./thumbnails/IMG_2971.jpg":"gBezS","url:./thumbnails/IMG_2990.jpg":"6Ugmr","url:./thumbnails/IMG_3292.jpg":"c5hMB","url:./thumbnails/IMG_3511.jpg":"1PUm2","url:./thumbnails/IMG_3807.jpg":"d6lnO","url:./thumbnails/IMG_3817.jpg":"lCkKi","url:./thumbnails/IMG_3943.jpg":"eRomM","url:./thumbnails/IMG_4044.jpg":"faKFN","url:./thumbnails/IMG_4087.jpg":"253Em","url:./thumbnails/IMG_4100.jpg":"bq56i","url:./thumbnails/IMG_4188.jpg":"jBM4y","url:./thumbnails/IMG_4198.jpg":"2HGcU","url:./thumbnails/IMG_4344.jpg":"iz7XF","url:./thumbnails/IMG_4398.jpg":"gQdWS","url:./thumbnails/IMG_4480.jpg":"7uGU1","url:./thumbnails/IMG_4572.jpg":"cukqy","url:./thumbnails/IMG_4937.jpg":"eUllE","url:./thumbnails/IMG_5284.jpg":"lq65r","url:./thumbnails/IMG_5319.jpg":"j8oiO","url:./thumbnails/IMG_5321.jpg":"2Uuyx","url:./thumbnails/IMG_5470.jpg":"eg8y8"}],"1MEiM":[function(require,module,exports,__globalThis) {
 module.exports = module.bundle.resolve("IMG_2971.86f9feb3.jpg") + "?" + Date.now();
 
 },{}],"6DJbk":[function(require,module,exports,__globalThis) {
@@ -22282,6 +22345,69 @@ module.exports = module.bundle.resolve("IMG_5321.326bcbc8.jpg") + "?" + Date.now
 
 },{}],"6feyq":[function(require,module,exports,__globalThis) {
 module.exports = module.bundle.resolve("IMG_5470.d04fd476.jpg") + "?" + Date.now();
+
+},{}],"gBezS":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_2971.65b46ab7.jpg") + "?" + Date.now();
+
+},{}],"6Ugmr":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_2990.d33029e4.jpg") + "?" + Date.now();
+
+},{}],"c5hMB":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_3292.9030c7b8.jpg") + "?" + Date.now();
+
+},{}],"1PUm2":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_3511.f84b2f78.jpg") + "?" + Date.now();
+
+},{}],"d6lnO":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_3807.1206a719.jpg") + "?" + Date.now();
+
+},{}],"lCkKi":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_3817.8ced8351.jpg") + "?" + Date.now();
+
+},{}],"eRomM":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_3943.d3b9ff24.jpg") + "?" + Date.now();
+
+},{}],"faKFN":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_4044.47b751a4.jpg") + "?" + Date.now();
+
+},{}],"253Em":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_4087.7fd5a81e.jpg") + "?" + Date.now();
+
+},{}],"bq56i":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_4100.e72d60c7.jpg") + "?" + Date.now();
+
+},{}],"jBM4y":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_4188.62d678b1.jpg") + "?" + Date.now();
+
+},{}],"2HGcU":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_4198.69ea9d6b.jpg") + "?" + Date.now();
+
+},{}],"iz7XF":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_4344.bc008cfe.jpg") + "?" + Date.now();
+
+},{}],"gQdWS":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_4398.46ca0307.jpg") + "?" + Date.now();
+
+},{}],"7uGU1":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_4480.f22d6e56.jpg") + "?" + Date.now();
+
+},{}],"cukqy":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_4572.9e3145df.jpg") + "?" + Date.now();
+
+},{}],"eUllE":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_4937.7149e388.jpg") + "?" + Date.now();
+
+},{}],"lq65r":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_5284.4c539a14.jpg") + "?" + Date.now();
+
+},{}],"j8oiO":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_5319.d0cc9397.jpg") + "?" + Date.now();
+
+},{}],"2Uuyx":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_5321.7d4e635c.jpg") + "?" + Date.now();
+
+},{}],"eg8y8":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IMG_5470.4af0d41a.jpg") + "?" + Date.now();
 
 },{}],"2jawN":[function(require,module,exports,__globalThis) {
 /**
