@@ -24,8 +24,8 @@ import IMG_4198 from "url:./IMG_4198.jpg";
 import IMG_4198_t from "url:./thumbnails/IMG_4198.jpg";
 import IMG_4344 from "url:./IMG_4344.jpg";
 import IMG_4344_t from "url:./thumbnails/IMG_4344.jpg";
-import IMG_4398 from "url:./IMG_4398.jpg";
-import IMG_4398_t from "url:./thumbnails/IMG_4398.jpg";
+import IMG_4399 from "url:./IMG_4399.jpg";
+import IMG_4399_t from "url:./thumbnails/IMG_4399.jpg";
 import IMG_4480 from "url:./IMG_4480.jpg";
 import IMG_4480_t from "url:./thumbnails/IMG_4480.jpg";
 import IMG_4572 from "url:./IMG_4572.jpg";
@@ -55,7 +55,7 @@ let photos = [
   {src: IMG_4188, thumbnail: IMG_4188_t, title: "Airone Cenerino", _id: "65eb97e8"},
   {src: IMG_4198, thumbnail: IMG_4198_t, title: "Airone Cenerino", _id: "d9043bd5"},
   {src: IMG_4344, thumbnail: IMG_4344_t, title: "Airone Cenerino", _id: "1d324029"},
-  {src: IMG_4398, thumbnail: IMG_4398_t, title: "Airone Cenerino", _id: "a325da53"},
+  {src: IMG_4399, thumbnail: IMG_4399_t, title: "Airone Cenerino", _id: "a325da53"},
   {src: IMG_4480, thumbnail: IMG_4480_t, title: "Gallinella d'acqua", _id: "31f846ec"},
   {src: IMG_4572, thumbnail: IMG_4572_t, title: "Cicogna", _id: "539a922c"},
   {src: IMG_4937, thumbnail: IMG_4937_t, title: "Fagiano", _id: "8f515a6f"},

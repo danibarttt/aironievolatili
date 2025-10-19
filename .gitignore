@@ -8,6 +8,7 @@ logs
 **/*.backup.*
 **/*.back.*
 dist
+.hushlogin
 
 node_modules
 bower_components
