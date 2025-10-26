@@ -7,15 +7,12 @@ import Captions from "yet-another-react-lightbox/plugins/captions";
 import "yet-another-react-lightbox/plugins/captions.css";
 import photos from "./photos";
 import "./lightbox.css";
-import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import Download from "yet-another-react-lightbox/plugins/download";
 
 export default function Gallery() {
   const navigate = useNavigate();
   const location = useLocation();
   const [currentPhotoId, setCurrentPhotoId] = useState(null);
   const captionsRef = useRef(null);
-  const fullscreenRef = useRef(null);
 
   const openLightbox = (id) => {
     navigate(`${location.pathname}?photo=${id}`, { replace: false });
@@ -81,8 +78,7 @@ export default function Gallery() {
             src: photo.src,
             title: photo.title,
           }))}
-          fullscreen={{ ref: fullscreenRef }}
-          plugins={[Zoom, Captions, Fullscreen, Download]}
+          plugins={[Zoom, Captions]}
           open={true}
           close={closeLightbox}
           index={currentIndex}
