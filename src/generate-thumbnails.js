@@ -15,6 +15,7 @@ for (const file of files.filter(file => file.endsWith(".jpg"))) {
 
   sharp(inputPath)
     .resize({ width: 600 })
+    .jpeg({ quality: 70, mozjpeg: true })
     .toFile(outputPath)
     .then(() => console.log(`Thumbnail created: ${file}`))
     .catch(err => console.error(err));
