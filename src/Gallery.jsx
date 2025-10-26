@@ -1,12 +1,34 @@
-import { useState, useEffect, useRef } from "react";
+import {useState, useEffect, useRef} from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import { useNavigate, useLocation } from "react-router";
+import {useNavigate, useLocation} from "react-router";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import "yet-another-react-lightbox/plugins/captions.css";
 import photos from "./photos";
 import "./lightbox.css";
+
+function Header() {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const t = setTimeout(() => setVisible(true), 200);
+    return () => clearTimeout(t);
+  }, []);
+
+  return (
+    <div style={{
+      opacity: visible ? 1 : 0,
+      transition: "opacity 200ms ease",
+    }}>
+      <h1 style={{fontSize: '40px', textAlign: "center"}}>
+        Aironi e Altri Volatili
+      </h1>
+      <h4 style={{textAlign: "center", fontStyle: "italic", marginBottom: "50px"}}>
+        Foto di Daniele Bartorilla
+      </h4>
+    </div>
+  )
+}
 
 export default function Gallery() {
   const navigate = useNavigate();
@@ -15,12 +37,12 @@ export default function Gallery() {
   const captionsRef = useRef(null);
 
   const openLightbox = (id) => {
-    navigate(`${location.pathname}?photo=${id}`, { replace: false });
+    navigate(`${location.pathname}?photo=${id}`, {replace: false});
   };
 
   const closeLightbox = () => {
     if (new URLSearchParams(location.search).get("photo")) {
-      navigate(location.pathname, { replace: true });
+      navigate(location.pathname, {replace: true});
     }
     setCurrentPhotoId(null);
   };
@@ -39,13 +61,7 @@ export default function Gallery() {
 
   return (
     <div>
-      <h1 style={{ fontSize: '40px', textAlign: "center" }}>
-        Aironi e Altri Volatili
-      </h1>
-      <h4 style={{ textAlign: "center", fontStyle: "italic", marginBottom: "50px" }}>
-        Foto di Daniele Bartorilla
-      </h4>
-
+      <Header/>
       <div
         style={{
           columnCount: 3,
@@ -64,7 +80,7 @@ export default function Gallery() {
               marginBottom: "4px",
               cursor: "pointer",
               opacity: 0,
-              transition: "opacity 0.3s ease-in-out",
+              transition: "opacity 0.7s ease-in-out",
             }}
             onLoad={(e) => (e.currentTarget.style.opacity = 1)}
             onClick={() => openLightbox(photo.id)}
@@ -82,12 +98,12 @@ export default function Gallery() {
           open={true}
           close={closeLightbox}
           index={currentIndex}
-          captions={{ ref: captionsRef }}
+          captions={{ref: captionsRef}}
           on={{
-            view: ({ index }) => {
+            view: ({index}) => {
               const nextId = photos[index].id;
               setCurrentPhotoId(nextId);
-              navigate(`${location.pathname}?photo=${nextId}`, { replace: true });
+              navigate(`${location.pathname}?photo=${nextId}`, {replace: true});
             },
             click: () => {
               (captionsRef.current?.visible

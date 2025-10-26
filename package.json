@@ -15,7 +15,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "node src/generate-thumbnails.js && vite build",
+    "build": "node src/generate-photos.js && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist --dotfiles --message \"Deploy $(date)\""
